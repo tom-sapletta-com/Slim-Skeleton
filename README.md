@@ -25,3 +25,13 @@ Run this command in the application directory to run the test suite
 	php composer.phar test
 
 That's it! Now go build something cool.
+
+##  Test
+    
+    http://localhost/Slim-Skeleton/
+    http://localhost/Slim-Skeleton/public/
+    http://localhost/Slim-Skeleton/public/hello/Tom
+    
+## DB implementation    
+    
+    
