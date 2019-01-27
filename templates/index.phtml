@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Slim 3</title>
-        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <style>
-            body {
-                margin: 50px 0 0 0;
-                padding: 0;
-                width: 100%;
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                text-align: center;
-                color: #aaa;
-                font-size: 18px;
-            }
+<head>
+    <meta charset="utf-8"/>
+    <title>Slim 3</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            margin: 50px 0 0 0;
+            padding: 0;
+            width: 100%;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #aaa;
+            font-size: 18px;
+        }
 
-            h1 {
-                color: #719e40;
-                letter-spacing: -3px;
-                font-family: 'Lato', sans-serif;
-                font-size: 100px;
-                font-weight: 200;
-                margin-bottom: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Slim</h1>
-        <div>a microframework for PHP</div>
+        h1 {
+            color: #719e40;
+            letter-spacing: -3px;
+            font-family: 'Lato', sans-serif;
+            font-size: 100px;
+            font-weight: 200;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Slim</h1>
+<div>a microframework for PHP</div>
+<p>
+    http://localhost/Slim-Skeleton/public/hello/
+</p>
 
-        <?php if (isset($name)) : ?>
-            <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
-        <?php else: ?>
-            <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
-        <?php endif; ?>
-    </body>
+<?php if (isset($name)) : ?>
+    <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
+<?php else: ?>
+    <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
+<?php endif; ?>
+
+<form action="/Slim-Skeleton/public/todo" method="post">
+    <!--            <input type="text" name="id" value="10" />-->
+    <input type="text" name="task" value="post er"/>
+    <!--            <input type="text" name="status" value="2" />-->
+    <br>
+    <label>
+        <input type="radio" name="status" value="1" checked> Opened
+    </label>
+    <label>
+        <input type="radio" name="status" value="2"> In Process
+    </label>
+    <label>
+        <input type="radio" name="status" value="3"> Done
+    </label>
+    <label>
+
+        <input type="radio" name="status" value="4"> Archive
+    </label>
+
+
+    <br>
+
+    <!--            <input type="text" name="created_at" value="2019" />-->
+    <input type="submit">
+</form>
+</body>
 </html>
